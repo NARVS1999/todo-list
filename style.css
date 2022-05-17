@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Indie+Flower&family=Kumbh+Sans:wght@700&family=Rubik:wght@400;500;700&family=Varela+Round&display=swap');
+:root {
+    --primary-color: #1C0C5B; 
+    --card-color: #3D2C8D;
+    --border-color: #916BBF;
+    --font-color: #C996CC;
+
+    --primary-color2: #E9EFC0;
+    --card-color2: #B4E197;
+    --border-color2:#83BD75;
+    --font-color2: #4E944F;
+
+    --primary-color3: #006E7F;
+    --card-color3: #F8CB2E;
+    --border-color3:#EE5007;
+    --font-color3: #B22727;
+
+    --primary-color4: #1C0A00;
+    --card-color4: #361500;
+    --border-color4:#603601;
+    --font-color4: #CC9544;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+    transition: all .5s;
+}
+body {
+    font-family: Rubik;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    width: fit-content;
+    height: fit-content;
+
+    background-color: var(--card-color);
+    border: 3px solid var(--border-color);
+    border-radius: 20px;
+    box-shadow: 0 3px 5px var(--border-color);
+
+    padding: 60px 40px;
+}
+
+h3 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color: var(--font-color);
+    font-weight: bold;
+    
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+li {
+    width: 300px;
+    display: flex;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.done {
+    color: grey;
+    text-decoration: line-through;
+}
+.done-span {
+    text-decoration: none;
+}
+
+span {
+    cursor: pointer;
+    margin-left: auto;
+    font-size: 16px;
+    color: white;
+    
+}
+
+.color-selection {
+    width: fit-content;
+    height: 50px;
+
+    background-color: var(--card-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 50px;
+
+    padding: 5px 10px;
+}
+
+.selection {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50px;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+}
+
+.selection:active {
+    transform: scale(.75);
+}
+p {
+    opacity: 0;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+    padding-top: 8px;
+    transition: all .33;
+}
+p:hover {
+    opacity: 1;
+    transition: all .3s;
+}
+.color1 {
+    background-color: var(--card-color);
+    color: var(--font-color);
+    
+}
+
+.color1:hover,
+.color2:hover,
+.color3:hover,
+.color4:hover {
+    width: 60px;
+}
+.color2 {
+    background-color: var(--card-color2);
+    color: var(--font-color2);
+    
+}
+
+.color3 {
+    background-color: var(--card-color3);
+    color: var(--font-color3);
+}
+
+.color4 {
+    background-color: var(--border-color4);
+    color: var(--font-color4);
+}
